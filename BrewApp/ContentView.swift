@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct CircleView: View {
-    @State var model: RecipeModel
+    @State var model: Recipe
     @State var elasped: Double = 0
     @State var brewing: Bool = false
     @State var timer: Timer?
@@ -72,21 +72,8 @@ struct CircleView: View {
     }
 }
 
-struct RecipeModel: Identifiable {
-    let id: Int
-    let name: String
-    let description: String
-    let countdown: Double
-}
-
 struct ContentView: View {
-    
-    let recipes: [RecipeModel] = [
-        .init(id: 0, name: "Intro", description: " Weight out 16 g of coffee for a single cup of 250 ml water / 32 g for 500 ml of water", countdown: 0.0),
-        .init(id: 1, name: "Grind", description: " Grind the coffee on a medium-coarse setting. The grind size has a big impact on taste so experiment on your own grinder for best results. Bitter and dry: grind coarser. Sour and thin: grind finer", countdown: 20.0),
-        .init(id: 2, name: "Brew", description: "", countdown: 5.0),
-    ]
-    
+    @State var recipes: Array<Recipe>
     
     var body: some View {
         NavigationView {
@@ -105,9 +92,9 @@ struct ContentView: View {
     }
 }
 
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+// TODO: Unsure about this here.
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}

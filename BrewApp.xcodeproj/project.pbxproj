@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68D53C5B24B76F100011751C /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 68D53C5A24B76F100011751C /* data.json */; };
+		68D53C5E24B7707D0011751C /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D53C5D24B7707D0011751C /* Recipe.swift */; };
+		68D53C6224B772D90011751C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D53C6124B772D90011751C /* API.swift */; };
 		C6B8059524ADEB8400473E8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B8059424ADEB8400473E8B /* AppDelegate.swift */; };
 		C6B8059724ADEB8500473E8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B8059624ADEB8500473E8B /* SceneDelegate.swift */; };
 		C6B8059924ADEB8500473E8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B8059824ADEB8500473E8B /* ContentView.swift */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		68D53C5A24B76F100011751C /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		68D53C5D24B7707D0011751C /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		68D53C6124B772D90011751C /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		C6B8059124ADEB8400473E8B /* BrewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B8059424ADEB8400473E8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6B8059624ADEB8500473E8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +82,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68D53C5C24B770630011751C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				68D53C5D24B7707D0011751C /* Recipe.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		68D53C5F24B772A40011751C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				68D53C5A24B76F100011751C /* data.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		68D53C6024B772CE0011751C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				68D53C6124B772D90011751C /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		C6B8058824ADEB8400473E8B = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +129,9 @@
 		C6B8059324ADEB8400473E8B /* BrewApp */ = {
 			isa = PBXGroup;
 			children = (
+				68D53C6024B772CE0011751C /* API */,
+				68D53C5F24B772A40011751C /* Data */,
+				68D53C5C24B770630011751C /* Models */,
 				C6B8059424ADEB8400473E8B /* AppDelegate.swift */,
 				C6B8059624ADEB8500473E8B /* SceneDelegate.swift */,
 				C6B8059824ADEB8500473E8B /* ContentView.swift */,
@@ -243,6 +276,7 @@
 				C6B805A124ADEB8900473E8B /* LaunchScreen.storyboard in Resources */,
 				C6B8059E24ADEB8900473E8B /* Preview Assets.xcassets in Resources */,
 				C6B8059B24ADEB8900473E8B /* Assets.xcassets in Resources */,
+				68D53C5B24B76F100011751C /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +304,8 @@
 				C6B8059524ADEB8400473E8B /* AppDelegate.swift in Sources */,
 				C6B8059724ADEB8500473E8B /* SceneDelegate.swift in Sources */,
 				C6B8059924ADEB8500473E8B /* ContentView.swift in Sources */,
+				68D53C5E24B7707D0011751C /* Recipe.swift in Sources */,
+				68D53C6224B772D90011751C /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
