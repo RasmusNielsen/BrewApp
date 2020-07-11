@@ -9,16 +9,19 @@
 import SwiftUI
 
 struct CircleView: View {
+  
+  
     @State var model: Recipe
     @State var elasped: Double = 0
     @State var brewing: Bool = false
     @State var timer: Timer?
+  
+  
     
     var body: some View {
         ZStack {
             Circle()
                 .fill(Color.yellow)
-                .frame(width: 270, height: 270)
             VStack(){
                 Text(model.name)
                 Text(model.description)
@@ -37,7 +40,7 @@ struct CircleView: View {
                     }
                 }
                 Text(String(format: "%.1f", Double(model.countdown - elasped)))
-            }
+          }.background
         }
     }
     func stopCountdown() {
@@ -74,8 +77,10 @@ struct CircleView: View {
 
 struct ContentView: View {
     @State var recipes: Array<Recipe>
-    
+
     var body: some View {
+ 
+      
         NavigationView {
             VStack {
                 ScrollView(.vertical, showsIndicators: false) {
@@ -84,8 +89,11 @@ struct ContentView: View {
                             CircleView(model: recipe)
                         }
                     }
-                }
-            }.navigationBarTitle(Text("Kalita Wave"))
+                    
+                }.navigationBarTitle(Text("Kalita Wave"))
+                
+            }
+
             
         }
         

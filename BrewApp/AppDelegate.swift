@@ -15,6 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
+    
+    UINavigationBar.appearance().isTranslucent = false
+    UINavigationBar.appearance().barTintColor = UIColor(named: "Background")
+    UINavigationBar.appearance().backgroundColor = UIColor(named: "Background")
+    
+    //UIScrollView.appearance().backgroundColor = UIColor.clear
+    //UINavigation.appearance().backgroundColor = UIColor(named: "Background")
+    UIScrollView.appearance().backgroundColor = UIColor(named: "Background")
+    
     return true
   }
 
